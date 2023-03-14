@@ -3,6 +3,7 @@
 **Introduction and Problem Statement**
 
 **Business problem overview**
+
 In the telecom industry, customers are able to choose from multiple service providers and actively switch from one operator to another. In this highly competitive market, the telecommunications industry experiences an average of 15-25% annual churn rate. Given the fact that it costs 5-10 times more to acquire a new customer than to retain an existing one, customer retention has now become even more important than customer acquisition.
 
 For many incumbent operators, retaining high profitable customers is the number one business goal.
@@ -12,6 +13,7 @@ To reduce customer churn, telecom companies need to predict which customers are 
 In this project, you will analyse customer-level data of a leading telecom firm, build predictive models to identify customers at high risk of churn and identify the main indicators of churn.
 
 **Understanding and defining churn**
+
 There are two main models of payment in the telecom industry - postpaid (customers pay a monthly/annual bill after using the services) and prepaid (customers pay/recharge with a certain amount in advance and then use the services).
 
 In the postpaid model, when customers want to switch to another operator, they usually inform the existing operator to terminate the services, and you directly know that this is an instance of churn.
@@ -22,6 +24,7 @@ Thus, churn prediction is usually more critical (and non-trivial) for prepaid cu
 This project is based on the Indian and Southeast Asian market.
 
 **Definitions of churn**
+
 There are various ways to define churn, such as:
 
 Revenue-based churn: Customers who have not utilised any revenue-generating facilities such as mobile internet, outgoing calls, SMS etc. over a given period of time. One could also use aggregate metrics such as ‘customers who have generated less than INR 4 per month in total/average/median revenue.
@@ -37,13 +40,16 @@ In this project, you will use the usage-based definition to define churn.
 
 
 **High-value churn**
+
 In the Indian and Southeast Asian markets, approximately 80% of revenue comes from the top 20% of customers (called high-value customers). Thus, if we can reduce the churn of high-value customers, we will be able to reduce significant revenue leakage.
 
 
 In this project, you will define high-value customers based on a certain metric (mentioned later below) and predict churn only on high-value customers.
 
 **Understanding Data**
+
 **Understanding the business objective and the data**
+
 The dataset contains customer-level information for a span of four consecutive months - June, July, August and September. The months are encoded as 6, 7, 8 and 9, respectively. 
 
 
@@ -55,6 +61,7 @@ Customers usually do not decide to switch to another competitor instantly, but r
 The ‘good’ phase: In this phase, the customer is happy with the service and behaves as usual.
 
 **Data preparation**
+
 The following data preparation steps are crucial for this problem:
 
 1. Filter high-value customers
@@ -74,6 +81,7 @@ vol_3g_mb_9
 After tagging churners, remove all the attributes corresponding to the churn phase (all attributes having ‘ _9’, etc. in their names). 
 
 **Modelling**
+
 Build models to predict churn. The predictive model that you’re going to build will serve two purposes:
 1. It will be used to predict whether a high-value customer will churn or not, in near future (i.e. churn phase). By knowing this, the company can take action steps such as providing special plans, discounts on recharge etc.
 2. It will be used to identify important variables that are strong predictors of churn. These variables may also indicate why customers choose to switch to other networks.
