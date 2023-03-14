@@ -4,9 +4,12 @@
 All the outputs of the Jupyter notebook do not render in GitHub
 
 Kindly view the notebook using this [link](https://nbviewer.org/github/Khan98Haseeb/Telecom_Churn_Prediction/blob/main/Python_NB_Telecom_Case_Study_14032023.ipynb)
+
 Alternatively you can paste this link (https://github.com/Khan98Haseeb/Telecom_Churn_Prediction/blob/main/Python_NB_Telecom_Case_Study_14032023.ipynb) in [nbviewer.org](nbviewer.org)
 
-
+.
+.
+.
 
 
 
